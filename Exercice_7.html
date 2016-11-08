@@ -5,10 +5,24 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <form>
+       <form>
             <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
             <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
-            <button id="valider" name="valider">Valider</button>
+            <button onclick="calcul()" id="valider" name="valider">Valider</button>
         </form>
+        <script>
+        function calcul(){
+          var p = document.getElementById('pointure').value;
+          var p = document.getElementById('annee').value;
+          result= parseInt(p)*2;
+          result= result+5;
+          result= result*50;
+          result= result-70;
+          result= result+1766;
+          alert( result);
+
+         }
+
+        </script>
     </body>
 </html>
